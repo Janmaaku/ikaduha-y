@@ -1,0 +1,71 @@
+:root{
+
+    --primary-color: black;
+    --bs-body-bg: rgb(9, 8, 8);
+    --bs-body-font-family: 'Montserrat', sans-serif;
+    
+}
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/netflix-image.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.text-decoration-none{
+    font: 800 2rem 'Inter Tight';
+    background: linear-gradient(to right, #9b0606 25%, #f3f7f6 50%, #161414 75%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+    font-size: 100;
+}
+@keyframes animate{
+    to{
+        background-position: 400% start;
+    }}
+/*NAV LINK*/
+.link{
+    color: #000;
+    position: relative;
+    font: 500 3rem 'Montserrat ';
+    text-decoration: none;
+    transition: 2s;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 92% 0 0 0;
+    background: #ff0055;
+    transition: .3s;
+}
+.link:hover{ 
+    color: #fff;
+}
+.link:hover::after{ inset: 0 0 0 0;}
+
+
+/*hero section*/
+.hero-bg{
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX() translateY(-50%);
+}
+.hero-text-header {
+    padding-top: 100px !important;
+  }
+  
+  .hero-section {
+    max-width: 70%;
+  }
+  
